@@ -1,0 +1,20 @@
+.site-header {
+  background-color: #cb35b5;
+  color:#cdedf1;
+  height:100vh;
+  font-family:monospace;
+
+}
+
+.site-header-content{
+  margin:10px;
+}
+.profile-pic{
+  border-radius:50%;
+  
+
+}
+
+body{
+  margin:0
+}
