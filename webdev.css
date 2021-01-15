@@ -173,98 +173,7 @@ header {
   }
 }
 
-/* skills */
-.skills {
-  background: #008080;
-}
 
-.skill-item p {
-  font-size: 18px;
-  font-weight: 200;
-}
-
-.container {
-  background-color: lightgrey;
-  width: 80%;
-  border-radius: 15px;
-}
-
-.skill {
-  background-color: rgb(94, 92, 194);
-  color: white;
-  padding: 0.01%;
-  text-align: right;
-  font-size: 15px;
-  border-radius: 15px;
-}
-
-.html,
-.android,
-.java {
-  width: 80%;
-}
-
-.python {
-  width: 70%;
-}
-
-.mysql {
-  width: 60%;
-}
-
-@media screen and (max-width: 600px) {
-    .skills h2 {
-        /* float: left; */
-        font-size: 30px;
-        text-align: center;
-      }
-
-    .skill-item p{
-        font-size: 16px;
-    }
-}
-
-
-/* certifications */
-.certification {
-  background-color: #f7b968;
-  text-align:center;
-}
-
-.row {
-  margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 10px;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 22%;
-}
-
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -277,25 +186,7 @@ header {
   }
 }
 
-/* projects */
-/* .projects{
-    background: #FFE66D ;
-}
-.project-item {
-    overflow: hidden;
-  }
-  .project-item img {
-    float: left;
-    width: 150px;
-    height: 150px;
-  }
-  .project-item h2 {
-    margin-top: 0;
-  }
-  .project-item p{
-      float: left;
-      margin: 20px;
-  } */
+
 
 /* footer */
 
