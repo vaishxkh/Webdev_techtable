@@ -169,6 +169,7 @@ header {
   }
 }
 
+
 /* skills */
 .skills{
   background-color: rgb(253, 154, 184);
@@ -201,6 +202,7 @@ header {
   background: rgb(68, 94, 238);
 }
 
+
 .skills .progress-bar {
   width: 1px;
   height: 10px;
@@ -208,25 +210,7 @@ header {
   background-color: #0baaf3;
 }
 
-/* projects */
-/* .projects{
-    background: #FFE66D ;
-}
-.project-item {
-    overflow: hidden;
-  }
-  .project-item img {
-    float: left;
-    width: 150px;
-    height: 150px;
-  }
-  .project-item h2 {
-    margin-top: 0;
-  }
-  .project-item p{
-      float: left;
-      margin: 20px;
-  } */
+
 
 /* footer */
 
