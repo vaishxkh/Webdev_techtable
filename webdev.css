@@ -18,6 +18,7 @@ h1 {
 
 h2 {
   font-size: 45px;
+  text-align:center;
 }
 
 h1.h2 {
@@ -31,7 +32,6 @@ h1.h2 {
   width: 85%;
   margin: 0 auto;
   padding: 60px 0;
-  
 }
 
 /* navbar */
@@ -41,7 +41,7 @@ h1.h2 {
   padding: 0;
   padding-right: 40px;
   overflow: hidden;
-  background-color:#f153ff;
+  background-color: #f153ff;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -80,32 +80,29 @@ li a:hover {
   } */
 
 @media screen and (max-width: 600px) {
-    .navbar {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        padding-right: 5px;
-        overflow: hidden;
-        background-color: #f153ff;
-        top: 0;
-      }
-      li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 12px 14px;
-        font-size: 13px;
-        text-decoration: none;
-        font-weight: 300;
-      }
-
- }
-
-
+  .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 5px;
+    overflow: hidden;
+    background-color: #f153ff;
+    top: 0;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 300;
+  }
+}
 
 /* Home   */
 header {
-  background:#f153ff;
+  background: #f153ff;
   color: #f7fff7;
   text-align: center;
 }
@@ -116,7 +113,6 @@ header {
 @media screen and (max-width: 600px) {
   #home > .content-wrap > p {
     font-size: 15px;
-
   }
 
   #home > .content-wrap > h2 {
@@ -129,8 +125,8 @@ header {
 .about-me {
   background: #bae9f0;
   overflow: hidden;
-   font-family: monospace;
-   text-align: center;
+  font-family: monospace;
+  text-align: center;
 }
 
 .about-me img {
@@ -143,25 +139,25 @@ header {
 .about-me p {
   float: left;
   font-size: 18px;
-   font-family: monospace;
-   align-content: center;
+  font-family: monospace;
+  align-content: center;
   /* margin: 30px; */
 }
 
 @media screen and (max-width: 600px) {
-    .about-me h2 {
-        /* float: left; */
-        font-size: 30px;
-        align-content: center;
-      }
+  .about-me h2 {
+    /* float: left; */
+    font-size: 30px;
+    align-content: center;
+  }
 
-      .about-me p {
-        float: left;
-        font-size: 16px;
-        align-content: center;
-        /* margin: 30px; */
-      }
-      
+  .about-me p {
+    float: left;
+    font-size: 16px;
+    align-content: center;
+    /* margin: 30px; */
+  }
+
   .about-me img {
     width: 150px;
     height: 150px;
@@ -174,107 +170,42 @@ header {
 }
 
 /* skills */
-.skills {
-  background: #008080;
+.skills{
+  background-color: rgb(253, 154, 184);
+}
+.skills .progress {
+  height: 80px;
+  display: block;
+  background: none;
+  margin-left:100px;
+  margin-right:100px
+  
 }
 
-.skill-item p {
-  font-size: 18px;
-  font-weight: 200;
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
 }
 
-.container {
-  background-color: lightgrey;
-  width: 80%;
-  border-radius: 15px;
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
 }
 
-.skill {
-  background-color: rgb(94, 92, 194);
-  color: white;
-  padding: 0.01%;
-  text-align: right;
-  font-size: 15px;
-  border-radius: 15px;
+.skills .progress-bar-wrap {
+  background: rgb(68, 94, 238);
 }
 
-.html,
-.android,
-.java {
-  width: 80%;
-}
-
-.python {
-  width: 70%;
-}
-
-.mysql {
-  width: 60%;
-}
-
-@media screen and (max-width: 600px) {
-    .skills h2 {
-        /* float: left; */
-        font-size: 30px;
-        text-align: center;
-      }
-
-    .skill-item p{
-        font-size: 16px;
-    }
-}
-
-
-/* certifications */
-.certification {
-  background-color: #f7b968;
-  text-align:center;
-}
-
-.row {
-  margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 10px;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 22%;
-}
-
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-   .certification h2{
-       font-size: 30px;
-       text-align: center;
-   } 
-  .column {
-    width: 100%;
-  }
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #0baaf3;
 }
 
 /* projects */
@@ -302,15 +233,14 @@ header {
 footer {
   background-color: #310808;
   color: white;
-  
 }
 
 .fa {
   padding: 5px;
   font-size: 30px;
-  width:50px;
+  width: 50px;
   color: orange;
-  
+
   text-decoration: none;
   margin: 5px 2px;
 }
@@ -372,73 +302,67 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
-    .fa-linkedin {
-        margin-left: 250px;
-        color: white;
-      }
-    
-      #box3 > .material-icons{
-        margin-right: 10px;
-      }
+  .fa-linkedin {
+    margin-left: 250px;
+    color: white;
   }
-@media screen and (max-width: 600px) {
-    #contact h2{
-        font-size: 30px;
-        text-align: center;
-    }
 
-  
-  
+  #box3 > .material-icons {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #contact h2 {
+    font-size: 30px;
+    text-align: center;
+  }
 }
 
 .typewriter {
   color: #fff;
   font-family: monospace;
-  overflow: hidden;  /*Ensures the content is not revealed until the animation */
+  overflow: hidden; /*Ensures the content is not revealed until the animation */
   border-right: 0 solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .05em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+  letter-spacing: 0.05em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
 
 .label {
-	background-color: #111;
-	border-radius: 50px;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 5px;
-	position: relative;
-	height: 26px;
-	width: 50px;
-	transform: scale(1.5);
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.5);
 }
 
 .label .ball {
-	background-color: #fff;
-	border-radius: 50%;
-	position: absolute;
-	top: 2px;
-	left: 2px;
-	height: 22px;
-	width: 22px;
-	transform: translateX(0px);
-	transition: transform 0.2s linear;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
 }
-
-
-
-
-
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 /* The typewriter cursor effect */
